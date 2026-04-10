@@ -11,7 +11,7 @@ function Catalog(props){
 
                 </div>
                 <div className="catalog__list">
-                    {props.list.map((product) => <Card product={product} />)}
+                    {props.list.map((product) => <Card openModal={props.openModal} product={product} />)}
                 </div>
             </div>
         </div>

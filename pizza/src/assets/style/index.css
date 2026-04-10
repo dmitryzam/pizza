@@ -65,6 +65,7 @@ body {
     justify-content: space-between;
     gap: 10px;
     flex-wrap: wrap;
+    padding-top: 30px;
 }
 
 .card {
@@ -74,4 +75,96 @@ body {
     border-radius: 6px;
     flex-direction: column;
     align-items: center;
+}
+
+.card__image {
+    width: 100%;
+}
+
+.card__title {
+    font-size: 24px;
+    text-align: center;
+}
+
+.card__info {
+    font-size: 14px;
+    color: #999;
+    font-style: italic;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.card__price {
+    font-size: 20px;
+    color: #444;
+    margin: 20px;
+}
+.btn {
+    padding: 5px 35px;
+    border-radius: 3px;
+    border: 1px solid orange;
+    color: white;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    transition: 0.3s;
+}
+.btn:hover {
+    color: orange;
+    background-color: transparent;
+}
+
+.modal {
+    width: 800px;
+    height: 70vh;
+    overflow: auto;
+    position: fixed;
+    background-color: white;
+    border: 2px solid orange;
+    border-radius: 13px;
+    padding: 20px;
+    top: 15vh;
+    left: calc(50% - 400px);
+}
+.modal__header {
+    display: flex;
+    justify-content: flex-end;
+}
+.close-btn {
+    color: #444;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.close-btn:hover {
+    color: black;
+}
+
+.modal__body {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+.modal__image {
+    width: 40%;    
+}
+.modal__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.modal__properties{
+    display: flex;
+    flex-direction: column;
+    color: #999;
+    font-style: italic;
+}
+.modal__composition {
+    color: #999;
+    font-style: italic;
+}
+.modal__price {
+    font-size: 24px;
+    color: #444;
 }
